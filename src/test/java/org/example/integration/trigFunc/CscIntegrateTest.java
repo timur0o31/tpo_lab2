@@ -27,7 +27,7 @@ public class CscIntegrateTest {
     void setUp() {
         Cos cos = new Cos();
         Sin sin = new Sin(cos);
-        Cot cot = new Cot(cos);
+        Cot cot = new Cot(cos,sin);
         Tan tan = new Tan(cos,sin);
         Csc csc = new Csc(sin);
         Sec sec = new Sec(cos);

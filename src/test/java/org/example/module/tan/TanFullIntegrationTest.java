@@ -1,3 +1,5 @@
+package org.example.module.tan;
+
 import org.example.trigFunc.Cos;
 import org.example.trigFunc.Sin;
 import org.example.trigFunc.Tan;

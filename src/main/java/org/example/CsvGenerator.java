@@ -20,7 +20,7 @@ public class CsvGenerator {
         FUNCTIONS.put("sin", sin);
         FUNCTIONS.put("cos", cos);
         FUNCTIONS.put("tan", new Tan(cos,sin));
-        FUNCTIONS.put("cot", new Cot(cos));
+        FUNCTIONS.put("cot", new Cot(cos,sin));
         FUNCTIONS.put("sec", new Sec(cos));
         FUNCTIONS.put("csc", new Csc(sin));
         FUNCTIONS.put("ln",ln);

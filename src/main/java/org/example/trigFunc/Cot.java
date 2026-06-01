@@ -5,9 +5,9 @@ import org.example.MathFunction;
 public class Cot implements MathFunction {
     private final Cos cos;
     private final Sin sin;
-    public Cot(Cos cos) {
+    public Cot(Cos cos, Sin sin) {
         this.cos = cos;
-        this.sin = new Sin(cos);
+        this.sin = sin;
     }
     @Override
     public double calculate(double x, double eps){

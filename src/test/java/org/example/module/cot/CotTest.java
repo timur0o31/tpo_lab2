@@ -2,6 +2,7 @@ package org.example.module.cot;
 
 import org.example.trigFunc.Cos;
 import org.example.trigFunc.Cot;
+import org.example.trigFunc.Sin;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
@@ -11,7 +12,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CotTest {
     private final Cos cos = new Cos();
-    private final Cot cot = new Cot(cos);
+    private final Sin sin = new Sin(cos);
+    private final Cot cot = new Cot(cos,sin);
     @ParameterizedTest(name = "cot({0}) = {1}")
     @CsvSource({"0.78539, 1",
             "1.04719, 0.57735",
@@ -33,7 +35,7 @@ public class CotTest {
     @Test
     void checkCot() {
         Cos cos = new Cos();
-        Cot cot = new Cot(cos);
+        Cot cot = new Cot(cos,sin);
         double x = -2.45506;
         assertEquals(1.2202212869, cot.calculate(x, 1e-9), 1e-4);
     }

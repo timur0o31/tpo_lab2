@@ -30,7 +30,7 @@ public class SecIntegteteTest {
     void setUp() {
         Cos cos = new Cos();
         Sin sin = new Sin(cos);
-        Cot cot = new Cot(cos);
+        Cot cot = new Cot(cos,sin);
         Tan tan = new Tan(cos,sin);
         Sec sec = new Sec(cos);
         mathFunction = new Function(cos, sin,tan, cot, sec, csc, ln, log3);

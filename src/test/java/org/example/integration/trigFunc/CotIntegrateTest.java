@@ -33,7 +33,7 @@ public class CotIntegrateTest {
     void setUp() {
         Cos cos = new Cos();
         Sin sin = new Sin(cos);
-        Cot cot = new Cot(cos);
+        Cot cot = new Cot(cos,sin);
         mathFunction = new Function(cos, sin,tan, cot, sec, csc, ln, log3);
     }
     @ParameterizedTest(name="x=({0}), y=({1})")
